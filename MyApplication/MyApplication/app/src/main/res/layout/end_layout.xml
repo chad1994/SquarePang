@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/endframe">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#DAE3F3">
+
+
+        <ImageView
+            android:id="@+id/imageView6"
+            app:srcCompat="@drawable/gameover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_centerHorizontal="true" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="1080px"
+            android:layout_height="1080px"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="34dp"
+            android:background="#BDD7EE">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/win" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/myscore"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/yourscore"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/myscore"
+            android:layout_below="@+id/myscore"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="600px"
+            android:layout_height="250px"
+            android:layout_below="@+id/yourscore"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/myrecord" />
+
+        <TextView
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/yourscore"
+            android:layout_below="@+id/imageView4"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

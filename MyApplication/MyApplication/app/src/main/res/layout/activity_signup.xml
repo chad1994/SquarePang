@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/SignupID"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_x="128dp"
+        android:layout_y="112dp"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="138dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/SignupID"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_x="42dp"
+        android:layout_y="114dp"
+        android:text="I D"
+        android:textSize="50dp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_toStartOf="@+id/SignupPW"
+        android:layout_x="21dp"
+        android:layout_y="192dp"
+        android:text="PW"
+        android:textSize="50dp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="200dp"
+        android:layout_height="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:layout_x="88dp"
+        android:layout_y="373dp"
+        android:text="회원가입"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <EditText
+        android:id="@+id/SignupPW"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btn_signup"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginBottom="38dp"
+        android:layout_x="150dp"
+        android:layout_y="68dp"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="170dp"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Square Pang"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/btn_signup"
+        android:layout_below="@+id/textView3"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+
+</RelativeLayout>

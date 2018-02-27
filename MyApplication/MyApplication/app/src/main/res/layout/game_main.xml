@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="334dp"
+            android:layout_height="85dp"
+            app:srcCompat="@drawable/gamebar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/score_text"
+            android:layout_alignBottom="@+id/score_text"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginStart="48dp"
+            android:text="30"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_marginBottom="7dp"
+            android:layout_marginEnd="31dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

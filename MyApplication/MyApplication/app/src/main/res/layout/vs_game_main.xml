@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vs_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_light">
+
+            <Button
+                android:id="@+id/connectbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:text="매칭 시작." />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="1200px"
+                android:layout_height="1300px"
+                android:layout_above="@+id/connectbutton"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@drawable/gamerule" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/waitingimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vs_imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/waiting" />
+
+    <RelativeLayout
+        android:id="@+id/mainBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DAE9F5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/vs_imageView"
+            android:layout_width="334dp"
+            android:layout_height="85dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            app:srcCompat="@drawable/vs_gamebat" />
+
+        <TextView
+            android:id="@+id/vs_time_text"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/myname"
+            android:layout_alignEnd="@+id/myname"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="9dp"
+            android:text="30"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/vs_score_text"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/vs_time_text"
+            android:layout_alignBottom="@+id/vs_time_text"
+            android:layout_alignEnd="@+id/vs_imageView"
+            android:layout_marginEnd="42dp"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/myname"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/yourname"
+            android:layout_alignBottom="@+id/yourname"
+            android:layout_alignStart="@+id/vs_imageView"
+            android:layout_marginStart="40dp"
+            android:text="TextView"
+            android:textAlignment="textEnd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/yourname"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/vs_imageView"
+            android:layout_alignStart="@+id/vs_score_text"
+            android:layout_marginBottom="7dp"
+            android:text="TextView"
+            android:textAlignment="textStart"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

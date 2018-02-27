@@ -1,4 +1,4 @@
 ## SquarePang
 ---
   - Intro
-  ![Alt Text](../readme_image/intro.GIF)
+  ![Alt Text](SquarePang/readme_image/intro.GIF)

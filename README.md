@@ -4,9 +4,7 @@
   
   ![Alt Text](./readme_image/intro.GIF)
 
-  - ux/ui
-  
-  ![Alt Text](./readme_image/uxui.GIF)
+ 
   
   - 개발방향
   
